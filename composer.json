@@ -16,7 +16,8 @@
         "phpspec/phpspec": "~2.1",
 		   "xethron/migrations-generator": "dev-l5",
 			"way/generators": "dev-feature/laravel-five-stable",
-				 "laravel/socialite": "~2.0" 
+				 "laravel/socialite": "~2.0",
+				  "dingo/api": "1.0.*@dev"
 			
     },
 	"repositories": [

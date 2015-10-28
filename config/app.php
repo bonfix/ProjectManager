@@ -146,6 +146,7 @@ return [
 		'Way\Generators\GeneratorsServiceProvider',
 		'Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider',
 		 Laravel\Socialite\SocialiteServiceProvider::class,
+		  Dingo\Api\Provider\LaravelServiceProvider::class,
 
     ],
 
