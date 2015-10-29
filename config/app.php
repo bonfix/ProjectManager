@@ -160,6 +160,7 @@ return [
 		'Tymon\JWTAuth\Providers\JWTAuthServiceProvider',
         Laravel\Socialite\SocialiteServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
+        'GrahamCampbell\GitHub\GitHubServiceProvider',
 		
 
     ],
@@ -213,6 +214,7 @@ return [
 		'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
 		'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory',
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'GitHub' => 'GrahamCampbell\GitHub\Facades\GitHub',
 
     ],
 
