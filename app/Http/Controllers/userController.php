@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use Illuminate\Routing\Controller;
+
 
 class UserController extends Controller {
 
@@ -83,6 +83,12 @@ class UserController extends Controller {
 	public function destroy($id)
 	{
 		//
+	}
+	
+	public function getCsrf($id)
+	{
+		$token = array("csrf_token"=>csrf_token());
+		return $token;
 	}
 
 }

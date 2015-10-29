@@ -2,6 +2,19 @@
 
 return [
 
+
+    'token_secret' => 'some random string',
+    'facebook_secret' => '',
+    'foursquare_secret' => '',
+    'google_secret' => '',
+    'github_secret' => '6285dbab4328501eae32ed7e0866f67d8d8ddb8f',
+    'instagram_secret' => '',
+    'linkedin_secret' => '',
+    'live_secret' => '',
+    'yahoo_secret' => '',
+    'twitter_key' => '',
+    'twitter_secret' => '',
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -143,10 +156,11 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-		'Way\Generators\GeneratorsServiceProvider',
-		'Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider',
-		 Laravel\Socialite\SocialiteServiceProvider::class,
-		  Dingo\Api\Provider\LaravelServiceProvider::class,
+		
+		'Tymon\JWTAuth\Providers\JWTAuthServiceProvider',
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
+		
 
     ],
 
@@ -196,7 +210,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 		
-		'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+		'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
+		'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory',
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

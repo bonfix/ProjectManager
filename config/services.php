@@ -15,30 +15,24 @@ return [
     */
 
     'mailgun' => [
-        'domain' => '',
-        'secret' => '',
+        'domain' => env('MAILGUN_DOMAIN'),
+        'secret' => env('MAILGUN_SECRET'),
     ],
 
     'mandrill' => [
-        'secret' => '',
+        'secret' => env('MANDRILL_SECRET'),
     ],
 
     'ses' => [
-        'key'    => '',
-        'secret' => '',
+        'key'    => env('SES_KEY'),
+        'secret' => env('SES_SECRET'),
         'region' => 'us-east-1',
     ],
 
     'stripe' => [
         'model'  => App\User::class,
-        'key'    => '',
-        'secret' => '',
+        'key'    => env('STRIPE_KEY'),
+        'secret' => env('STRIPE_SECRET'),
     ],
-	
-	'github' => [
-		'client_id' => 'b525548021cffcff4eeb',
-		'client_secret' => '6285dbab4328501eae32ed7e0866f67d8d8ddb8f',
-		'redirect' => 'http://your-callback-url',
-	],
 
 ];

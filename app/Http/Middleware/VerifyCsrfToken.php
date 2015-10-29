@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
+use Closure;
 
 class VerifyCsrfToken extends BaseVerifier
 {
@@ -12,6 +13,15 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        //
+        '*',
     ];
+	
+	public function handle($request, Closure $next)
+	{
+		if(!$request->is('api/*')){
+		return parent::handle($request, $next);
+		}
+		return $next($request);
+	}
+	//H_CORPARATION
 }

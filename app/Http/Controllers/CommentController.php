@@ -2,11 +2,11 @@
 
 use Illuminate\Routing\Controller;
 
-class UserCotroller extends Controller {
+class CommentController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /usercotroller
+	 * GET /comment
 	 *
 	 * @return Response
 	 */
@@ -17,7 +17,7 @@ class UserCotroller extends Controller {
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /usercotroller/create
+	 * GET /comment/create
 	 *
 	 * @return Response
 	 */
@@ -28,7 +28,7 @@ class UserCotroller extends Controller {
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /usercotroller
+	 * POST /comment
 	 *
 	 * @return Response
 	 */
@@ -39,7 +39,7 @@ class UserCotroller extends Controller {
 
 	/**
 	 * Display the specified resource.
-	 * GET /usercotroller/{id}
+	 * GET /comment/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -51,7 +51,7 @@ class UserCotroller extends Controller {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /usercotroller/{id}/edit
+	 * GET /comment/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -63,7 +63,7 @@ class UserCotroller extends Controller {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /usercotroller/{id}
+	 * PUT /comment/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -75,7 +75,7 @@ class UserCotroller extends Controller {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /usercotroller/{id}
+	 * DELETE /comment/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
